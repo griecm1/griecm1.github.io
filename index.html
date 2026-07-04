@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christian Griesman — Software Engineer | Cybersecurity Enthusiast</title>
+<meta name="description" content="Portfolio of Christian Griesman, software engineer and cybersecurity enthusiast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">CG</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="top" class="hero">
+    <p class="eyebrow">Hi, I'm</p>
+    <h1>Christian Griesman</h1>
+    <p class="tagline">Software Engineer &nbsp;|&nbsp; Cybersecurity Enthusiast</p>
+    <p class="hero-sub">I build practical software and explore how systems get attacked and defended — from full-stack apps to honeypot threat-monitoring dashboards.</p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="#projects">View Projects</a>
+      <a class="btn btn-outline" href="https://github.com/griecm1" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-outline" href="mailto:christian.griesman@gmail.com">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>
+      I'm a software engineer interested in the intersection of building things and breaking them responsibly.
+      My work spans full-stack web applications, game development, and cybersecurity tooling —
+      including honeypot monitoring and network threat analysis. I like projects that turn raw
+      data (logs, attacker traffic, events) into something clear and actionable.
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Cowrie HoneyPot Dashboard</h3>
+          <p>
+            A real-time web dashboard for monitoring SSH honeypot activity captured by Cowrie —
+            visualizing attacker geography, compromised credentials, commands, and network
+            infrastructure (ISP/ASN) on an interactive world map with live charts.
+          </p>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>GeoIP2</li>
+            <li>Cowrie</li>
+            <li>HTML/JS</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/griecm1/Cowrie-HoneyPot-Dashboard" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>GoLocal Event Tracker</h3>
+          <p>
+            A community-focused web app for discovering nearby local events, with account
+            management, event search &amp; filtering, an interactive map, and Google Calendar
+            sync for reminders. Built as part of a team project.
+          </p>
+          <ul class="tags">
+            <li>React</li>
+            <li>MongoDB</li>
+            <li>Azure</li>
+            <li>Google Maps API</li>
+            <li>Vercel</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/joshxviii/event-tracker" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="tags">
+          <li>Python</li>
+          <li>C#</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks &amp; Tools</h3>
+        <ul class="tags">
+          <li>React</li>
+          <li>Flask</li>
+          <li>MonoGame</li>
+          <li>Git/GitHub</li>
+          <li>Azure</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Security</h3>
+        <ul class="tags">
+          <li>Honeypots (Cowrie)</li>
+          <li>Network / Log Analysis</li>
+          <li>GeoIP / Threat Attribution</li>
+          <li>Attack Monitoring</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Get in Touch</h2>
+    <p>Interested in working together or just want to say hi?</p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="mailto:christian.griesman@gmail.com">christian.griesman@gmail.com</a>
+      <a class="btn btn-outline" href="https://github.com/griecm1" target="_blank" rel="noopener">github.com/griecm1</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Christian Griesman</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
